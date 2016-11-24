@@ -4,7 +4,7 @@ import json
 class placeApi:
     def place_api(self,query,city,index,num):
         try:
-            #对百度地图api发送请求获取json
+            #对百度地图api发送请求获取json,发送请求与解析json部分可以替换简洁写法，具体可参见readme.txt
             url = 'http://api.map.baidu.com/place/v2/search?query=%s&' \
                   'page_size=10&page_num=%d&scope=2&region=%s&output=json&ak=NYFRcc4A4UBQpq5qLdxhTcfx5DKn5C0H' \
                   %(query,int(num),city)
